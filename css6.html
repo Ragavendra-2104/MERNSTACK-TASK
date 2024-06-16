@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login-container img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-btn {
+            background-color: green;
+            color: white;
+        }
+
+        .cancel-btn {
+            background-color: red;
+            color: white;
+            width: 48%;
+            display: inline-block;
+        }
+
+        .forgot-password {
+            display: inline-block;
+            width: 48%;
+            text-align: right;
+            color: grey;
+            text-decoration: none;
+        }
+
+        .remember-me-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="10.png" alt="Logo"> 
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Enter Username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter password">
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <div class="remember-me-container">
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+
+        <button type="button" class="cancel-btn">Cancel</button>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </form>
+</div>
+
+</body>
+</html>
